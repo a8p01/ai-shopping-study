@@ -294,7 +294,7 @@
 
             <div class="pdf-download">
                 <h3>📄 Complete Study Information</h3>
-                <p>For detailed information about this study, please download the full consent document:</p>
+                <p>For detailed information about this study, click below:</p>
                 <a href="#" onclick="showDetailedInfo()">View Detailed Study Information</a>
             </div>
 
@@ -312,6 +312,10 @@
             <div class="highlight-box">
                 <strong>Questions or concerns?</strong> Contact Ann-Kathrin Pesch at apesch@ethz.ch or the ETH Ethics Committee at ethics@sl.ethz.ch
             </div>
+
+            <button class="submit-button" onclick="beginStudy()">
+                Begin Study
+            </button>
 
             <div class="footer-info">
                 Study approved by ETH Zurich Ethics Committee | Chair of Technology Marketing, ETH Zurich
@@ -418,6 +422,14 @@
             if (event.target == modal) {
                 closePDFModal();
             }
+        }
+
+        function beginStudy() {
+            // Here you would redirect to the actual study
+            alert('Thank you. You will now be redirected to begin the study.');
+            
+            // Redirect to the actual study
+            // window.location.href = 'your-study-url';
         }
     </script>
 </body>
